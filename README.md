@@ -1,5 +1,20 @@
 # deny-from-BRAZIL
 
+IP Restringir un Dominio o Subdominio
+Cree un archivo .htaccess. (están ocultos por defecto)
+
+Agrega los siguientes contenidos:
+
+Denegar de todos Permitir desde 0.0.0.0.0
+
+(Reemplace los 0 con su IP para permitir. Agregue tantas líneas Permitir como sea necesario)
+
+Esto afectará a todos los subdirectorios, a menos que un subdirectorio tenga .htaccess que anule esto.
+
+Entonces, http://example.com puede ser visible para el público, pero si agrega el .htaccess anterior a http://dev.example.com, bloqueará esa página para el público en general.
+
+Solo bloqueará en el puerto 80, no bloqueará FTP o SSH.
+
 </p>
 deny from Afghanistan .htaccess
 denegar con .htaccess a Afghanistan
